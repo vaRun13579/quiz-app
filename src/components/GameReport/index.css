@@ -1,0 +1,152 @@
+/* * {
+  border: solid blue 0.5px;
+} */
+
+.report-content-holder {
+  align-self: stretch;
+  background-color: white;
+  flex-grow: 1;
+  overflow-y: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reports-data {
+  display: flex;
+  padding: 21px;
+}
+
+.marks-container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 45%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.answered-questions-container {
+  border: solid #0ea5e9 5px;
+  border-radius: 50%;
+  width: 83px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answered-para {
+  color: #0ea5e9;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.delight {
+  color: #475569;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.report-container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  list-style-type: none;
+  max-width: 55%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.correct-state-icon {
+  width: 24px;
+}
+.wrong-state-icon {
+  width: 15px;
+}
+.un-state-icon {
+  width: 12px;
+}
+
+.img-container {
+  width: 24px;
+  height: 24px;
+  align-content: center;
+  text-align: center;
+}
+
+.report-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.unattempted-questions-container {
+  background-color: #f8fafc;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.unattempted-questions-heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0ea5e9;
+}
+
+.unattempted-container {
+  text-align: center;
+  align-content: center;
+  flex-grow: 1;
+  background-color: #f8fafc;
+  padding: 16px;
+}
+
+.unattempted-questions-list {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.question-frame {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .unattempted-questions-heading {
+    font-size: 30px;
+  }
+  .unattempted-questions-container {
+    padding: 40px;
+  }
+  .question-frame {
+    max-width: 900px;
+  }
+  .answered-questions-container {
+    width: 120px;
+    height: 120px;
+    transform: translateX(-40px);
+  }
+  .answered-para {
+    font-size: 40px;
+  }
+  .delight {
+    font-size: 26px;
+  }
+  .marks-container {
+    justify-content: flex-end;
+  }
+  .report-item {
+    font-size: 18px;
+    gap: 15px;
+  }
+  .reports-data{
+    padding:40px;
+  }
+}

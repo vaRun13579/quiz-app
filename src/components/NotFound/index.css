@@ -1,0 +1,17 @@
+.not-found-container {
+  background-color: white;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-image {
+  width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-image {
+    width: 475px;
+  }
+}
